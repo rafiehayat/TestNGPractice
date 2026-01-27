@@ -16,6 +16,7 @@ public class ParallelTestDemo1 {
 	@Test
 	public void VerifyTitle() {
 		cd= new ChromeDriver();
+		cd.manage().window().maximize();
 		cd.get("https://www.saucedemo.com/");
 		
 		Assert.assertEquals(cd.getTitle(), "Swag Labs");

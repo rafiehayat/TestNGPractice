@@ -13,6 +13,7 @@ public class ParallelTestDemo2 {
 	@Test
 	public void LoginTest() {
 		cd = new ChromeDriver();
+		cd.manage().window().maximize();
 		cd.get("https://www.saucedemo.com/");
 		
 		cd.findElement(By.id("user-name")).sendKeys("standard_user");
