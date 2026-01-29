@@ -1,97 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-27T20:29:26 IST" name="Suite" finished-at="2026-01-27T20:29:29 IST" duration-ms="3197">
+  <suite started-at="2026-01-29T17:27:16 IST" name="Default suite" finished-at="2026-01-29T17:27:16 IST" duration-ms="46">
     <groups>
     </groups>
-    <test started-at="2026-01-27T20:29:26 IST" name="Test" finished-at="2026-01-27T20:29:29 IST" duration-ms="3197">
-      <class name="TestNG.TestNG.ListenerDemo2">
-        <test-method signature="FailTest()[pri:0, instance:TestNG.TestNG.ListenerDemo2@4b0b0854]" started-at="2026-01-27T20:29:26 IST" name="FailTest" finished-at="2026-01-27T20:29:26 IST" duration-ms="9" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 
-at org.testng.AssertJUnit.fail(AssertJUnit.java:65)
-at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:23)
-at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:33)
-at TestNG.TestNG.ListenerDemo2.FailTest(ListenerDemo2.java:35)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-at org.testng.TestRunner.privateRun(TestRunner.java:744)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+    <test started-at="2026-01-29T17:27:16 IST" name="Default test" finished-at="2026-01-29T17:27:16 IST" duration-ms="46">
+      <class name="TestNG.TestNG.InvocationCountDemo">
+        <test-method signature="Testmethod1(org.testng.ITestContext)[pri:0, instance:TestNG.TestNG.InvocationCountDemo@3e92efc3]" started-at="2026-01-29T17:27:16 IST" name="Testmethod1" finished-at="2026-01-29T17:27:16 IST" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@815b41f]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- FailTest -->
-        <test-method signature="Listener()[pri:0, instance:TestNG.TestNG.ListenerDemo2@4b0b0854]" started-at="2026-01-27T20:29:26 IST" name="Listener" finished-at="2026-01-27T20:29:29 IST" duration-ms="3159" status="PASS">
+        </test-method> <!-- Testmethod1 -->
+        <test-method signature="Testmethod1(org.testng.ITestContext)[pri:0, instance:TestNG.TestNG.InvocationCountDemo@3e92efc3]" started-at="2026-01-29T17:27:16 IST" name="Testmethod1" finished-at="2026-01-29T17:27:16 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@815b41f]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Listener -->
-        <test-method signature="SkipTest()[pri:0, instance:TestNG.TestNG.ListenerDemo2@4b0b0854]" started-at="2026-01-27T20:29:29 IST" name="SkipTest" finished-at="2026-01-27T20:29:29 IST" duration-ms="2" status="SKIP">
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skip Exception Thrown]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skip Exception Thrown
-at TestNG.TestNG.ListenerDemo2.SkipTest(ListenerDemo2.java:40)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-at org.testng.TestRunner.privateRun(TestRunner.java:744)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
+        </test-method> <!-- Testmethod1 -->
+        <test-method signature="Testmethod1(org.testng.ITestContext)[pri:0, instance:TestNG.TestNG.InvocationCountDemo@3e92efc3]" started-at="2026-01-29T17:27:16 IST" name="Testmethod1" finished-at="2026-01-29T17:27:16 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@815b41f]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SkipTest -->
-      </class> <!-- TestNG.TestNG.ListenerDemo2 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- Testmethod1 -->
+        <test-method signature="Testmethod1(org.testng.ITestContext)[pri:0, instance:TestNG.TestNG.InvocationCountDemo@3e92efc3]" started-at="2026-01-29T17:27:16 IST" name="Testmethod1" finished-at="2026-01-29T17:27:16 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@815b41f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Testmethod1 -->
+        <test-method signature="Testmethod1(org.testng.ITestContext)[pri:0, instance:TestNG.TestNG.InvocationCountDemo@3e92efc3]" started-at="2026-01-29T17:27:16 IST" name="Testmethod1" finished-at="2026-01-29T17:27:16 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@815b41f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Testmethod1 -->
+        <test-method signature="Testmethod2(org.testng.ITestContext)[pri:0, instance:TestNG.TestNG.InvocationCountDemo@3e92efc3]" started-at="2026-01-29T17:27:16 IST" name="Testmethod2" finished-at="2026-01-29T17:27:16 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@815b41f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Testmethod2 -->
+        <test-method signature="Testmethod2(org.testng.ITestContext)[pri:0, instance:TestNG.TestNG.InvocationCountDemo@3e92efc3]" started-at="2026-01-29T17:27:16 IST" name="Testmethod2" finished-at="2026-01-29T17:27:16 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@815b41f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Testmethod2 -->
+        <test-method signature="Testmethod2(org.testng.ITestContext)[pri:0, instance:TestNG.TestNG.InvocationCountDemo@3e92efc3]" started-at="2026-01-29T17:27:16 IST" name="Testmethod2" finished-at="2026-01-29T17:27:16 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@815b41f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Testmethod2 -->
+      </class> <!-- TestNG.TestNG.InvocationCountDemo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
