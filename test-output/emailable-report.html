@@ -8,18 +8,32 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">8</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">46</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num">0</td><td class="num attn">3</td><td class="num attn">2</td><td class="num">52</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="8">TestNG.TestNG.InvocationCountDemo</td><td><a href="#m0">Testmethod1</a></td><td rowspan="5">1769687836550</td><td rowspan="5">8</td></tr><tr class="passedeven"><td><a href="#m1">Testmethod1</a></td></tr><tr class="passedeven"><td><a href="#m2">Testmethod1</a></td></tr><tr class="passedeven"><td><a href="#m3">Testmethod1</a></td></tr><tr class="passedeven"><td><a href="#m4">Testmethod1</a></td></tr><tr class="passedeven"><td><a href="#m5">Testmethod2</a></td><td rowspan="3">1769687836568</td><td rowspan="3">1</td></tr><tr class="passedeven"><td><a href="#m6">Testmethod2</a></td></tr><tr class="passedeven"><td><a href="#m7">Testmethod2</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">RetryLogicDemo.TestCaseExample</td><td><a href="#m0">TestCase01</a></td><td rowspan="1">1769932070325</td><td rowspan="1">1</td></tr><tr class="failedeven"><td><a href="#m1">TestCase02</a></td><td rowspan="1">1769932070328</td><td rowspan="1">1</td></tr><tr><th colspan="4">Test &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="3">RetryLogicDemo.TestCaseExample</td><td><a href="#m2">TestCase01</a></td><td rowspan="3">1769932070321</td><td rowspan="3">0</td></tr><tr class="retriedeven"><td><a href="#m3">TestCase01</a></td></tr><tr class="retriedeven"><td><a href="#m4">TestCase01</a></td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">RetryLogicDemo.TestCaseExample</td><td><a href="#m5">TestCase03</a></td><td rowspan="1">1769932070331</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m6">TestCase04</a></td><td rowspan="1">1769932070333</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">TestNG.TestNG.InvocationCountDemo#Testmethod1</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>org.testng.TestRunner@815b41f</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">TestNG.TestNG.InvocationCountDemo#Testmethod1</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>org.testng.TestRunner@815b41f</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">TestNG.TestNG.InvocationCountDemo#Testmethod1</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>org.testng.TestRunner@815b41f</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">TestNG.TestNG.InvocationCountDemo#Testmethod1</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>org.testng.TestRunner@815b41f</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">TestNG.TestNG.InvocationCountDemo#Testmethod1</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>org.testng.TestRunner@815b41f</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">TestNG.TestNG.InvocationCountDemo#Testmethod2</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>org.testng.TestRunner@815b41f</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">TestNG.TestNG.InvocationCountDemo#Testmethod2</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>org.testng.TestRunner@815b41f</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">TestNG.TestNG.InvocationCountDemo#Testmethod2</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>org.testng.TestRunner@815b41f</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">RetryLogicDemo.TestCaseExample#TestCase01</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 
+	at RetryLogicDemo.TestCaseExample.TestCase01(TestCaseExample.java:10)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">RetryLogicDemo.TestCaseExample#TestCase02</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 
+	at RetryLogicDemo.TestCaseExample.TestCase02(TestCaseExample.java:14)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">RetryLogicDemo.TestCaseExample#TestCase01</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 
+	at RetryLogicDemo.TestCaseExample.TestCase01(TestCaseExample.java:10)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">RetryLogicDemo.TestCaseExample#TestCase01</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 
+	at RetryLogicDemo.TestCaseExample.TestCase01(TestCaseExample.java:10)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">RetryLogicDemo.TestCaseExample#TestCase01</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 
+	at RetryLogicDemo.TestCaseExample.TestCase01(TestCaseExample.java:10)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">RetryLogicDemo.TestCaseExample#TestCase03</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">RetryLogicDemo.TestCaseExample#TestCase04</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
