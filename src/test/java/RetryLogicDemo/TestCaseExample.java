@@ -5,7 +5,7 @@ import org.testng.AssertJUnit;
 
 public class TestCaseExample {
 	
-	@Test(retryAnalyzer = RetryAnalyser.class)
+	@Test 
 	public void TestCase01() {
 		AssertJUnit.assertTrue(false);
 	}
