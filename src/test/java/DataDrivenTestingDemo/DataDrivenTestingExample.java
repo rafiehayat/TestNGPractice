@@ -9,6 +9,10 @@ import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
 
 public class DataDrivenTestingExample {
 
@@ -48,14 +52,34 @@ public class DataDrivenTestingExample {
 		// Get total no. of cells in a row
 		int ttlCells = ExcelWSheet.getRow(0).getLastCellNum();
 		
-		for(int currentRow = 0; currentRow < ttlRows; currentRow ++ )
+		for(int currentRow = 1; currentRow < ttlRows; currentRow ++ )
 		{
-			for(int currentCell = 0; currentCell < ttlCells;  currentCell ++)
-			{
-				System.out.print(ExcelWSheet.getRow(currentRow).getCell(currentCell).toString());
-				System.out.print("\t");
+			
+			//Launch Chrome browser
+			WebDriver cd = new ChromeDriver();
+			cd.manage().window().maximize();
+			cd.get("https://www.saucedemo.com/");
+			
+			cd.findElement(By.id("user-name")).sendKeys(ExcelWSheet.getRow(currentRow).getCell(0).toString());
+	        cd.findElement(By.id("password")).sendKeys(ExcelWSheet.getRow(currentRow).getCell(1).toString());
+	        
+	        cd.findElement(By.id("login-button")).click();
+	        
+	        try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
 			}
-			System.out.print("\n");
+			
+//			for(int currentCell = 0; currentCell < ttlCells;  currentCell ++)
+//			{
+//				System.out.print(ExcelWSheet.getRow(currentRow).getCell(currentCell).toString());
+//				System.out.print("\t");
+//			}
+//			System.out.print("\n");
+	        
+	        cd.quit();
 
 		}
 		
