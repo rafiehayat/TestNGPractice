@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNG.TestNG.SoftAssertionDemo">
+      <class name="TestNG.TestNG.DataProviderWithExcel">
         <methods>
-          <include name="TestMethod"/>
+          <include name="setup"/>
+          <include name="searchKeyWord"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- TestNG.TestNG.SoftAssertionDemo -->
+      </class> <!-- TestNG.TestNG.DataProviderWithExcel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
