@@ -1,4 +1,5 @@
 package TestNGReportDemo;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -13,11 +14,15 @@ public class TestNGReportEx2 {
 	{
 		WebDriver cd = new ChromeDriver();
 		cd.manage().window().maximize();
+		Reporter.log("Chrome broowser Opened");
 		cd.get("https://www.google.com/");
+		Reporter.log("URL Opened");
+		
 		
 		WebElement  searchBox = cd.findElement(By.name("q"));
 		
 		searchBox.sendKeys("India Gate");
+		Reporter.log("India Gate Keyword");
 		searchBox.sendKeys(Keys.ENTER);
 		
 		
