@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNG.TestNG.DataProviderWithExcel">
+      <class name="ExtentReportDemo.BasicExtentReportClass">
         <methods>
-          <include name="setup"/>
-          <include name="searchKeyWord"/>
-          <include name="tearDown"/>
+          <include name="verifyEmail"/>
+          <include name="verifyTitle"/>
+          <include name="startReport"/>
         </methods>
-      </class> <!-- TestNG.TestNG.DataProviderWithExcel -->
+      </class> <!-- ExtentReportDemo.BasicExtentReportClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
