@@ -1,7 +1,10 @@
 package BasicTestCase;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class BasicTestCase {
@@ -18,7 +21,10 @@ public class BasicTestCase {
 		
 		String currentWindowhandle = cd.getWindowHandle();
 		cd.switchTo().window(currentWindowhandle);
-		cd.findElement(By.linkText("Sauce Labs Backpack")).click();
+//		cd.findElement(By.linkText("Sauce Labs Backpack")).click();
+		
+		List <WebElement> elementList = cd.findElements(By.partialLinkText("Sauce"));
+		System.out.println("Element Size:" + elementList.size());
 		
 		Thread.sleep(30000);
 		cd.quit();
