@@ -1,5 +1,7 @@
 package BasicTestCase;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -20,6 +22,24 @@ public class DropDown_Selection {
 //		dropdown.selectByVisibleText("Afghanistan");
 //		dropdown.selectByValue("Afghanistan");
 		dropdown.selectByIndex(1);
+		
+		
+		if(dropdown.isMultiple())
+		{
+			System.out.println("DropDown is Multiple");
+		}
+		else
+		{
+			System.out.println("DropDown is not Multiple");
+
+		}
+		List <WebElement> allDropdownOptions = dropdown.getOptions();
+		System.out.println("Total Options: " + allDropdownOptions.size());
+		
+		for(WebElement el: allDropdownOptions)
+		{
+			System.out.println(el.getText());
+		}
 
 
 	}
