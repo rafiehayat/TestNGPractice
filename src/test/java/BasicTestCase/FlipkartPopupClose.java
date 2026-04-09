@@ -14,7 +14,7 @@ public class FlipkartPopupClose {
 //	        WebDriverWait wait = new WebDriverWait(cd, Duration.ofSeconds(10));
 	        
 	        try {
-	        	Thread.sleep(1000); 
+	        	Thread.sleep(1000);
 	            
 	            Actions action = new Actions(cd);
 	            action.sendKeys(Keys.ESCAPE).build().perform();
