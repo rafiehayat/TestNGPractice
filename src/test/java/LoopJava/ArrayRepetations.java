@@ -7,9 +7,19 @@ public class ArrayRepetations {
 		int searchelement = 200;
 		int count = 0;
 		
-		for(int i = 0; i<=a.length-1;i++)
+//		for(int i = 0; i<=a.length-1;i++)
+//		{
+//			if(a[i]==searchelement)
+//			{
+//				count++;
+//			}
+//		}
+//		System.out.println("The Element "  + searchelement + " is repeated " + count + " times");
+		
+		
+		for(int value:a )
 		{
-			if(a[i]==searchelement)
+			if(value==searchelement)
 			{
 				count++;
 			}
