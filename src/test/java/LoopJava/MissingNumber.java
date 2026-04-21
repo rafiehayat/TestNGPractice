@@ -2,7 +2,6 @@ package LoopJava;
 
 public class MissingNumber {
     public static void main(String[] args) {
-        // Array is missing '4' (Range 1 to 5)
         int a[] = {1, 2, 4, 5}; 
         int n = 5; // The total count of numbers there should be
         
