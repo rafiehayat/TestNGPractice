@@ -6,13 +6,34 @@ public class EncapsulationDemo {
 	private double amount;
 	
 	
-	void setaccno (int accno)
-	{
-		this.accno = accno;
-	}
-	
-	int getaccno ()
-	{
+	public int getAccno() {
 		return accno;
 	}
+	public void setAccno(int accno) {
+		this.accno = accno;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public double getAmount() {
+		return amount;
+	}
+	public void setAmount(double amount) {
+		this.amount = amount;
+	}
+	
+	
+//	void setaccno (int accno)
+//	{
+//		this.accno = accno;
+//	}
+//	
+//	int getaccno ()
+//	{
+//		return accno;
+//	}
+	
 }
