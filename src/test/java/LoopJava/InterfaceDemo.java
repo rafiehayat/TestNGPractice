@@ -24,6 +24,11 @@ public class InterfaceDemo  implements Shape{
 	{
 		System.out.println("This is Circle");
 	}
+	
+	void Traingle()
+	{
+		System.out.println("This is Triangle");
+	}
 
 	public static void main(String[] args) {
 //		InterfaceDemo i = new  InterfaceDemo();
@@ -39,6 +44,8 @@ public class InterfaceDemo  implements Shape{
 		sh.Square();  // default
 		
 		Shape.rectangle();  //static method can directly access from interface
+		
+//		sh.triangle()    // cannot acces because object is created for interface(Shape)
 	}
 
 }
